@@ -59,6 +59,12 @@
   color: white;
 }
 
+.qr-image {
+    margin: 10px;
+    height: 160px;
+    width: 160px;
+}
+
 .sub-text {
   font-size: 25px;
   color: white;

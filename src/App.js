@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import twitterLogo from './assets/twitter-logo.svg';
+import cohurinQR from './assets/twitter-qr.jpeg'
 import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js';
 import { Program, Provider, web3 } from '@project-serum/anchor';
 import idl from './idl.json';
@@ -216,7 +217,7 @@ const App = () => {
                     <p className="header">🖼 Solana GIF stash</p>
                     <p className="sub-text"> Post your fav GIFs on Solana ✨ (devnet)</p>
                     <div className="footer-container">
-                        <h2 className="footer-text">feel free to hmu (EN/JP)</h2>
+                        <h2 className="footer-text"> feel free to hmu (EN/JP)</h2>
                         <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
                         <a
                             className="footer-text"
@@ -224,6 +225,7 @@ const App = () => {
                             target="_blank"
                             rel="noreferrer"
                         >{`@${TWITTER_HANDLE}`}</a>
+                        <img alt="twitter account" className="qr-image" src={cohurinQR}/>
                     </div>
                 </div>
                 <div className="container">
